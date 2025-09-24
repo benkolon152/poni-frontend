@@ -3,11 +3,13 @@ import './App.css';
 import NavBar from "./components/NavBar";
 import MLP from "./components/MLP";
 import SantasCrew from "./components/SantasCrew";
+import './function.js'
 
 export default class App extends React.Component{
   render(){
     return(
       <div>
+        <title>Ponies</title>
       <header>
         <NavBar/>
       </header>
