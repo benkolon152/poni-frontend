@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="PonyHeadLogo.jpg" todo="TODO set browser tab icon" />
+<title>TODO title is Ponies</title>
+<style>
+    /* TODO apply styles */
+  body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #ffe4f0;
+    color: #880048;
+  }
+  header {
+    background: #ff99cc;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(136,0,72,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .menu {
+    display: flex;
+    gap: 30px;
+  }
+  .menu button {
+    background: #ff66b2;
+    border: 2px solid #880048;
+    border-radius: 15px;
+    color: #fff0f6;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .menu button:hover, .menu button.active {
+    background: #ff3399;
+    transform: scale(1.05);
+    outline: none;
+  }
+  main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: #ffd6e8;
+    border: 3px solid #ff66b2;
+    border-radius: 18px;
+    box-shadow: 3px 3px 10px #ff99ccaa;
+    padding: 20px;
+    text-align: center;
+    color: #5a0049;
+    user-select: none;
+  }
+  .card h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  .card p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+  @media (max-width: 600px) {
+    header {
+      padding: 10px 0;
+    }
+    .menu button {
+      font-size: 1rem;
+      padding: 8px 18px;
+    }
+    main {
+      margin: 15px auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+    <!-- TODO implement MenuBar component -->
+  <nav class="menu" role="menubar">
+    <button id="ponies-btn" class="active" role="menuitem" aria-controls="ponies" aria-selected="true">My Little Ponies</button>
+    <button id="santa-btn" role="menuitem" aria-controls="santa" aria-selected="false">Santa's Crew</button>
+  </nav>
+</header>
+
+<main>
+    <!-- TODO implement MyLittlePonies component -->
+  <section id="ponies" aria-label="My Little Ponies Cards">
+    <div class="cards">
+        <!-- TODO implement PonyCard component -->
+      <article class="card">
+        <h3>Twinkle Star</h3>
+        <p>A playful pony who loves to paint rainbows and spread cheer wherever she trots.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Bubblegum Breeze</h3>
+        <p>Famous for blowing magical bubbles that float wishes up to the sky.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Glitterflash</h3>
+        <p>Shining with sparkles, she lights up the night with her dancing hooves.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Minty Whisk</h3>
+        <p>Likes racing through fields with a cool minty breeze following her.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Cherry Charm</h3>
+        <p>Sweet and kind, always ready to share her cherry treats with friends.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Sunny Sprout</h3>
+        <p>Bringing sunshine and growth to every flower she steps near.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Lavender Glow</h3>
+        <p>A calm pony whose scent soothes the forest creatures at dusk.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Peach Puff</h3>
+        <p>Soft as a cloud and bubbly, she loves summer picnics and laughter.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- TODO implement SantasCrew component -->
+  <section id="santa" aria-label="Santa's Crew Cards" hidden>
+    <div class="cards">
+        <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Rudolf</h3>
+        <p>The bright-nosed leader who guides Santa’s sleigh through snowy skies.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Dasher</h3>
+        <p>Fast and daring, he’s always first to dash through the snowstorms.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Dancer</h3>
+        <p>Graceful and nimble, loves to twirl through the northern lights.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Prancer</h3>
+        <p>Elegant and proud, prances proudly leading Santa’s crew.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Vixen</h3>
+        <p>Sly and swift, known for clever routes and quick helps.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Comet</h3>
+        <p>Brings joy and speed with his comet-like zoom across the skies.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Cupid</h3>
+        <p>Spreads love and warmth, even on the coldest winter nights.</p>
+      </article>
+      <!-- apply PonyCard child component -->
+      <article class="card">
+        <h3>Blitzen</h3>
+        <p>Lightning-fast energy, always sparking fun in Santa’s workshop.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<script>
+    // TODO make buttons switch between the 2 pages
+
+  const poniesBtn = document.getElementById('ponies-btn');
+  const santaBtn = document.getElementById('santa-btn');
+  const poniesSection = document.getElementById('ponies');
+  const santaSection = document.getElementById('santa');
+
+  poniesBtn.addEventListener('click', () => {
+    poniesBtn.classList.add('active');
+    poniesBtn.setAttribute('aria-selected', 'true');
+    santaBtn.classList.remove('active');
+    santaBtn.setAttribute('aria-selected', 'false');
+    poniesSection.hidden = false;
+    santaSection.hidden = true;
+  });
+
+  santaBtn.addEventListener('click', () => {
+    santaBtn.classList.add('active');
+    santaBtn.setAttribute('aria-selected', 'true');
+    poniesBtn.classList.remove('active');
+    poniesBtn.setAttribute('aria-selected', 'false');
+    santaSection.hidden = false;
+    poniesSection.hidden = true;
+  });
+</script>
+
+<!-- TODO Upload for passing the task: the whole React project folder .zip-ed file with your own name, on Classroom. Good luck! :)  -->
+
+</body>
+</html>
