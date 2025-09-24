@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="PonyHeadLogo.jpg" todo="TODO set browser tab icon" />
+<title>TODO title is Ponies</title>
+</head>
+<body>
+
+
+
+<script>
+    // TODO make buttons switch between the 2 pages
+
+  const poniesBtn = document.getElementById('ponies-btn');
+  const santaBtn = document.getElementById('santa-btn');
+  const poniesSection = document.getElementById('ponies');
+  const santaSection = document.getElementById('santa');
+
+  poniesBtn.addEventListener('click', () => {
+    poniesBtn.classList.add('active');
+    poniesBtn.setAttribute('aria-selected', 'true');
+    santaBtn.classList.remove('active');
+    santaBtn.setAttribute('aria-selected', 'false');
+    poniesSection.hidden = false;
+    santaSection.hidden = true;
+  });
+
+  santaBtn.addEventListener('click', () => {
+    santaBtn.classList.add('active');
+    santaBtn.setAttribute('aria-selected', 'true');
+    poniesBtn.classList.remove('active');
+    poniesBtn.setAttribute('aria-selected', 'false');
+    santaSection.hidden = false;
+    poniesSection.hidden = true;
+  });
+</script>
+
+<!-- TODO Upload for passing the task: the whole React project folder .zip-ed file with your own name, on Classroom. Good luck! :)  -->
+
+</body>
+</html>
