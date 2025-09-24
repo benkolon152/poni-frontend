@@ -8,7 +8,7 @@ import './function.js'
 export default class App extends React.Component{
   render(){
     return(
-      <div>
+      <div id="center">
         <title>Ponies</title>
       <header>
         <NavBar/>

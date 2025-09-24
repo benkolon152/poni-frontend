@@ -5,7 +5,6 @@ export default class MLP extends React.Component{
     render(){
         return(
                   <div className="cards">
-                      {/* TODO implement PonyCard component */}
                     <article className="card">
                       <h3>Twinkle Star</h3>
                       <p>A playful pony who loves to paint rainbows and spread cheer wherever she trots.</p>
